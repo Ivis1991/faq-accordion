@@ -6,16 +6,19 @@ import { cn } from "../../lib/utils";
 import IconPlus from "../../../assets/images/icon-plus.svg";
 import IconMinus from "../../../assets/images/icon-minus.svg";
 
-
 const Accordion = AccordionPrimitive.Root;
 
 const AccordionItem = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Item>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Item>
 >(({ className, ...props }, ref) => (
-  <AccordionPrimitive.Item ref={ref} className={cn('border-b border-slate-100', className)} {...props} />
+  <AccordionPrimitive.Item
+    ref={ref}
+    className={cn("border-b border-slate-100", className)}
+    {...props}
+  />
 ));
-AccordionItem.displayName = 'AccordionItem';
+AccordionItem.displayName = "AccordionItem";
 
 const AccordionTrigger = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Trigger>,
@@ -25,14 +28,20 @@ const AccordionTrigger = React.forwardRef<
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
-        'flex flex-1 items-center justify-between text-left py-4 font-work-semibold transition-all hover:text-Grayish-purple group',
+        "flex flex-1 items-center justify-between text-left py-4 font-work-semibold transition-all group hover:text-Grayish-purple",
         className
       )}
       {...props}
     >
       {children}
-      <img src={IconPlus} className="h-4 w-4 justify-end shrink-0 transition-transform duration-200 group-data-[state=open]:hidden" />
-      <img src={IconMinus} className="h-4 w-4 shrink-0  justify-end transition-transform duration-200 group-data-[state=closed]:hidden" />
+      <img
+        src={IconPlus}
+        className="h-4 w-4 justify-end shrink-0 transition-transform duration-200 group-data-[state=open]:hidden"
+      />
+      <img
+        src={IconMinus}
+        className="h-4 w-4 shrink-0  justify-end transition-transform duration-200 group-data-[state=closed]:hidden"
+      />
     </AccordionPrimitive.Trigger>
   </AccordionPrimitive.Header>
 ));
@@ -45,7 +54,7 @@ const AccordionContent = React.forwardRef<
   <AccordionPrimitive.Content
     ref={ref}
     className={cn(
-      'overflow-hidden font-work-regular text-left transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down',
+      "overflow-hidden font-work-regular text-left transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down",
       className
     )}
     {...props}
