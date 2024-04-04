@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "@/components/ui/accordion.tsx"],
+  "include": ["src", "/assets"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
