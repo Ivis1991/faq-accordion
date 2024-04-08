@@ -10,7 +10,7 @@ export const FaqElement = () => {
     <>
       <div className="w-full gap-4 p-6">
         <div className="flex flex-row-2 gap-6">
-          <img src="/assets/images/icon-star.svg"></img>
+          <img src="assets/images/icon-star.svg"></img>
           <h1 className="text-3xl items-center font-work-sans">FAQs</h1>
         </div>
         <Accordion
