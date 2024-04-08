@@ -7,7 +7,7 @@ function App() {
       <div className="flex h-screen items-center bg-Light-pink z-0 sm:hidden">
         <div className="flex flex-col w-full sm:hidden">
           <img
-            src="assets\images\background-pattern-mobile.svg"
+            src="/assets/images/background-pattern-mobile.svg"
             className="absolute inset-0 top-0 z-10 w-full"
           ></img>
         </div>
@@ -22,7 +22,7 @@ function App() {
       <div className="hidden sm:flex sm:h-screen sm:items-center sm:justify-center sm:bg-Light-pink sm:z-0 ">
         <div className="hidden sm:flex">
           <img
-            src="assets\images\background-pattern-desktop.svg"
+            src="/assets/images/background-pattern-desktop.svg"
             className="w-full absolute inset-0 top-0 z-10"
           ></img>
         </div>
